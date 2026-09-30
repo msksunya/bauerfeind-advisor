@@ -17,7 +17,7 @@ st.caption("고객의 증상과 상태를 입력하면 DB를 기반으로 최적
 # ==========================================
 @st.cache_resource
 def init_rag_system():
-    GEMINI_API_KEY = "AQ.Ab8RN6J0wfh0GXOYH3PrJBq5HxPUBfNEoPQdj26zL5onJFOG9A"
+    GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
     DB_DIR = "./bauerfeind_db"
 
     # 사용자님의 기존 정상 작동 설정 그대로 유지
